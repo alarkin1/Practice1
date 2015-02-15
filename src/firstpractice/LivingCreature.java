@@ -11,9 +11,11 @@ package firstpractice;
  */
 public interface LivingCreature {
 
-public abstract void decreaseHealth(int livesLostAmnt );
+    public abstract void decreaseHealth(int livesLostAmnt);
 
-public abstract void increaseHealth(int livesGainedAmnt);
+    public abstract void increaseHealth(int livesGainedAmnt);
 
+    public abstract void speak();
     
+    public abstract void move(String direction);
 }

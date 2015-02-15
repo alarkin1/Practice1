@@ -9,8 +9,14 @@ package firstpractice;
  *
  * @author Alex
  */
-public interface FightAbility {
+public interface Armor {
+
+
+
+    public abstract void setArmorRating(int armorRating);
+
+    public abstract void decreaseNumberOfUses(int amountOfUsesLost);
     
-    public abstract void fight(Weapon weaponToUse);
-    
+    public abstract Armor getArmor();
+
 }

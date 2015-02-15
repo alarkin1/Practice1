@@ -9,6 +9,32 @@ package firstpractice;
  *
  * @author Alex
  */
-public interface Villager extends LivingCreature {
-    
+public class Villager implements LivingCreature {
+
+    private double health;
+    private String name;
+
+    @Override
+    public void speak() {
+        System.out.println("Hmm");
+    }
+
+    @Override
+    public void increaseHealth(int livesGainedAmnt) {
+        this.health += livesGainedAmnt;
+    }
+
+    @Override
+    public void decreaseHealth(int livesLostAmnt) {
+        this.health -= livesLostAmnt;
+    }
+
+    @Override
+    public void move(String direction) {
+        System.out.println("");
+    }
+
+    public String getName() {
+        return name;
+    }
 }

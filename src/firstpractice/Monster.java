@@ -9,6 +9,6 @@ package firstpractice;
  *
  * @author Alex
  */
-public interface Monster {
+public interface Monster extends LivingCreature{
     
 }
